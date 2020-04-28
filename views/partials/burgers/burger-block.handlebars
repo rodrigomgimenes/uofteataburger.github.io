@@ -1,0 +1,40 @@
+<div class="column_side">
+  <div class="card">
+    <div class="card-liner" data-neweat="{{eat}}">
+      {{#if eat}}
+        <figure style="background-color: #DAE1E7;"><img src="/assets/images/burgereaten.png" alt="BurgerEaten" /></figure>
+      {{else}}
+        <figure><img src="/assets/images/burgertoeat.png" alt="BurgerToEat" /></figure>
+      {{/if}}
+      <div class="card--social">
+        <ul>
+          {{#if eat}}
+            <li class="ketchup"><i style="background-color: #DFE4E8;"><img src="/assets/images/ketchupempty.png" alt="KetchupEmpty" style="height: 25px;width: 10px;margin-top: 5px;" /></i></li>
+            <li class="mustard"><i style="background-color: #DFE4E8;"><img src="/assets/images/mustardempty.png" alt="MustardEmpty" style="height: 25px;width: 10px;margin-top: 5px;" /></i></li>
+          {{else}}
+            <li class="ketchup"><i><img src="/assets/images/ketchupfull.png" alt="KetchupFull" style="height: 25px;width: 10px;margin-top: 5px;" /></i></li>
+            <li class="mustard"><i><img src="/assets/images/mustardfull.png" alt="MustardFull" style="height: 25px;width: 10px;margin-top: 5px;" /></i></li>
+          {{/if}}
+        </ul>
+      </div>
+      <div class="card--title">
+        <h3>Buger Factory</h3>
+        <p>{{name}}</p>
+      </div>
+      <div class="card--desc">
+        <hr />
+        <p>{{#if eat}}It is time to say.. Goobye.{{else}}When life throws you a burger.. EAT IT!{{/if}}</p>
+      </div>
+      <div class="card--btn">
+        <a href="">
+          <span class="moreinfo"><i class="fa fa-info-circle"></i>{{#if eat}} Click to Delete{{else}} Click to Eat{{/if}}</span>
+          {{#if eat}}
+            <span class="delete-burger" data-neweat="{{eat}}" data-id="{{id}}">Delete Burger</span>
+          {{else}}
+            <span class="change-eat" data-neweat="{{eat}}" data-id="{{id}}">EAT!</span>
+          {{/if}}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

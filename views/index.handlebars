@@ -1,0 +1,49 @@
+<header>
+  <div class="container">
+    <div class="container__item">
+      <h1>Eat a <b>BURGER</b></h1>
+      <form class="create-form">
+        <input type="text" id="input_burger" class="form__field" placeholder="Enter Your Burger" />
+        <button type="submit" class="btn btn--primary btn--inside uppercase">Done!</button>
+      </form>
+    </div>
+  </div>
+</header>
+
+<sector class="row">
+
+  <div class="column">
+    <div class="left_side">
+      <div class="row_side">
+
+        <!-- Column "Eat a Burger" -->
+        {{#each burgers}}
+          {{#unless eat}}
+            {{> burgers/burger-block eat=false}}
+          {{/unless}}
+        {{/each}}
+    
+      </div>
+    </div>
+  </div>
+
+  <div class="column">
+    <div class="right_side">
+      <div class="row_side">
+
+        <!-- Column "Burger Eaten" -->
+        {{#each burgers}}
+          {{#if eat}}
+            {{> burgers/burger-block eat=true}}
+          {{/if}}
+        {{/each}}
+    
+      </div>
+    </div>
+  </div>
+    
+</sector>
+	
+<footer class="cred">
+	<a href="https://github.com/rodrigomgimenes" target="_blank">Inspiration from RMG<i class="fas fa-share"></i></a>
+</footer>
