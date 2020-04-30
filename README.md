@@ -18,9 +18,13 @@
     2. Go to your project's directory (i.e.: "cd Documents/Projects/EatABurger");
     3. Type the following command: npm install
     4. After the action above is completed, type the following command: node server.js
-    5. Write a burger name inside the text field and click "Done!" to insert it on the waiting EAT list
-    6. Click on "EAT!" to update the state of the card and database, and move it to delete list;
-    7. Click on "Delete Burger" to remove the card and delete from the database.
+    OR 
+    1. Access the following webpage: https://intense-oasis-22538.herokuapp.com/
+
+    Then:
+    1. Write a burger name inside the text field and click "Done!" to insert it on the waiting EAT list
+    2. Click on "EAT!" to update the state of the card and database, and move it to delete list;
+    3. Click on "Delete Burger" to remove the card and delete from the database.
 
   * Hope you enjoy it!!
 
