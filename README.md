@@ -18,6 +18,7 @@
     2. Go to your project's directory (i.e.: "cd Documents/Projects/EatABurger");
     3. Type the following command: npm install
     4. After the action above is completed, type the following command: node server.js
+    
     OR 
     1. Access the following webpage: https://intense-oasis-22538.herokuapp.com/
 
